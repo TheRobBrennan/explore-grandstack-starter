@@ -143,7 +143,7 @@ See the "Hands On With The GRANDStack Starter" video linked at the beginning of 
 
 ### Vercel
 
-[Vercel](https://vercel.com/) can be used with monorepos such as grand-stack-starter. [`vercel.json`](https://github.com/grand-stack/grand-stack-starter/blob/master/now.json) defines the configuration for deploying with [Vercel](https://vercel.com/).
+[Vercel](https://vercel.com/) can be used with monorepos such as grand-stack-starter. `vercel.json` defines the configuration for deploying with [Vercel](https://vercel.com/).
 
 1. Set the now secrets for your Neo4j instance:
 
