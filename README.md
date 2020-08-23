@@ -1,6 +1,5 @@
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://grandstack.io/deploy-starter-netlify) [![Deploy to Vercel](https://vercel.com/button)](https://grandstack.io/deploy-starter-vercel) [![Provision Neo4j](https://grandstack.io/img/provision-neo4j.png)](https://sandbox.neo4j.com/?usecase=blank-sandbox)
 
-
 # GRANDstack Starter
 
 ```
@@ -142,19 +141,19 @@ NEO4J_PASSWORD
 
 See the "Hands On With The GRANDStack Starter" video linked at the beginning of this README for a walkthrough of deploying to Netlify.
 
-### Vercel / Zeit Now
+### Vercel
 
-Zeit Now v2 can be used with monorepos such as grand-stack-starter. [`now.json`](https://github.com/grand-stack/grand-stack-starter/blob/master/now.json) defines the configuration for deploying with Zeit Now v2.
+[Vercel](https://vercel.com/) can be used with monorepos such as grand-stack-starter. `vercel.json` defines the configuration for deploying with [Vercel](https://vercel.com/).
 
 1. Set the now secrets for your Neo4j instance:
 
 ```
-now secret add grand_stack_starter_neo4j_uri bolt://<YOUR_NEO4J_INSTANCE_HERE>
-now secret add grand_stack_starter_neo4j_user <YOUR_DATABASE_USERNAME_HERE>
-now secret add grand_stack_starter_neo4j_password <YOUR_DATABASE_USER_PASSWORD_HERE>
+vercel secret add explore_grandstack_starter_neo4j_uri bolt://18.207.112.93:33129
+vercel secret add explore_grandstack_starter_neo4j_user neo4j
+vercel secret add explore_grandstack_starter_neo4j_password rewards-railroad-rowers
 ```
 
-2. Run `now`
+2. Run `vercel`
 
 ## Docker Compose
 
@@ -169,7 +168,6 @@ If you want to load the example DB after the services have been started:
 ```
 docker-compose run api npm run seedDb
 ```
-
 
 You can find instructions for other ways to use Neo4j (Neo4j Desktop, Neo4j Aura, and other cloud services) in the [Neo4j directory README.](./neo4j)
 
